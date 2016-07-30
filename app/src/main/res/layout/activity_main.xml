@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickBtn"
+            android:text="课表1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickBtn"
+            android:text="课表2" />
+
+    </LinearLayout>
+
+    <com.hmy.coursetablelayout.view.courseTableTest2Layout
+        android:id="@+id/layout_course2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+    </com.hmy.coursetablelayout.view.courseTableTest2Layout>
+
+    <com.hmy.coursetablelayout.view.CourseTableTestLayout
+        android:id="@+id/layout_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+    </com.hmy.coursetablelayout.view.CourseTableTestLayout>
+
+</LinearLayout>
