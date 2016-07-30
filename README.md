@@ -179,6 +179,9 @@
         //其他设置方法请在代码中查看
         mCourseTableTestLayout.setData(mList);
 
+        //刷新界面这样调用
+        mCourseTableTestLayout.notifyDataSetChanged();
+
 ----------
 
 ![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table1.png)![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table2.png)
