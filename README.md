@@ -1,6 +1,8 @@
 # CourseTableLayout
 一个Android自动生成课程表的自定义控件
 
+CSDN：[http://blog.csdn.net/hmyang314/article/details/52076392](http://blog.csdn.net/hmyang314/article/details/52076392)
+
 ![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table.gif)
 
 ----------
