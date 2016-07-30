@@ -1,5 +1,5 @@
 # CourseTableLayout
-一个好用的Android课程表自定义控件
+一个Android自动生成课程表的自定义控件
 
 ![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table.gif)
 
