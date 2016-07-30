@@ -2,7 +2,6 @@
 一个好用的Android课程表自定义控件
 
 ![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table.gif)
-![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table1.png)![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table2.png)
 
 ----------
 ##一、介绍
@@ -181,3 +180,5 @@
         mCourseTableTestLayout.setData(mList);
 
 ----------
+
+![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table1.png)![](https://github.com/HMY314/CourseTableLayout/blob/master/imageCache/course_table2.png)
