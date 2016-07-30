@@ -308,6 +308,8 @@ public abstract class CourseTableLayout<T> extends LinearLayout {
         textView.setTextSize(mTimeTextSize);
         textView.setTextColor(mTimeTextColor);
         textView.setGravity(Gravity.CENTER);
+
+        customTimeText(textView, i, mTimeLabels[i]);
         return textView;
     }
 
@@ -347,7 +349,6 @@ public abstract class CourseTableLayout<T> extends LinearLayout {
         return list.size();
     }
 
-
     /**
      * 判断该课程是否是当前时间的课程
      *
@@ -365,11 +366,12 @@ public abstract class CourseTableLayout<T> extends LinearLayout {
      * @param firstTextView
      */
     protected void showFirstTextView(TextView firstTextView) {
-
     }
 
+    /**
+     * 显示空课程（默认文本已显示，这里用于自定义效果）
+     */
     protected void showEmptyCourse(TextView textView, int dayPosition, int timePosition, int oneTableWidth, int oneTableHeight) {
-
     }
 
     /**
@@ -383,13 +385,24 @@ public abstract class CourseTableLayout<T> extends LinearLayout {
     protected abstract void showCourse(TextView textView, T course, int dataPosition, int dayPosition, int timePosition, int oneTableWidth, int oneTableHeight);
 
     /**
-     * 对日期文本进行自定义设置
+     * 自定义日期文本
      *
      * @param textView
      * @param dayPosition
      * @param dayLabel
      */
-    protected abstract void customDayText(TextView textView, int dayPosition, String dayLabel);
+    protected void customDayText(TextView textView, int dayPosition, String dayLabel) {
+    }
+
+    /**
+     * 自定义时间文本
+     *
+     * @param textView
+     * @param timePosition
+     * @param timeLabel
+     */
+    protected void customTimeText(TextView textView, int timePosition, String timeLabel) {
+    }
 
     protected abstract void onClickEmptyCourse(TextView textView, int dayPosition, int timePosition);
 
